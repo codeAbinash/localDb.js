@@ -317,7 +317,7 @@ class localDb{
     }
     set(){
         var len = arguments.length;
-        var dbLen = this.mainDb.length;
+        var dbLen = this.mainDb.length,i;
         if(len==1||len==0)
             console.error("Error in update() : Check the arguments update()");
         else if(len==2){
