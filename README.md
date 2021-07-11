@@ -137,13 +137,13 @@ StdS.set("name='S'","roll==25",10);
 // checks first 10 elements, and updates where condition is true
 ```
 ```js
-StdS.set("age=25","name=='Abinash'","last",10)); 
+StdS.set("age=25","name=='Abinash'","last",10); 
 // checks last 10 elements and updates where conditions is true
-StdS.set("age=25","name=='Abinash'","first",20)); 
+StdS.set("age=25","name=='Abinash'","first",20); 
 // checks first 20 elements and updates where conditions is true
-StdS.set("age=25","name=='Abinash'",20,"first")); 
+StdS.set("age=25","name=='Abinash'",20,"first"); 
 // checks first 20 elements and updates where conditions is true
-StdS.set("age=25","name=='Abinash'",10,"last")); 
+StdS.set("age=25","name=='Abinash'",10,"last"); 
 // checks last 10 elements and updates where conditions is true
 ```
 > `set()` always returns how many elements are updated
