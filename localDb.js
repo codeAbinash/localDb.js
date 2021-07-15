@@ -46,6 +46,9 @@ class localDb{
     getName(){
         return this.name;
     }
+    getKeyName(){
+        return this.localDbName;
+    }
     setName(){
         if(typeof(arguments[0])=="string"){
             var x = new localDb(arguments[0]);
@@ -353,5 +356,59 @@ class localDb{
     }
     save(){
         localStorage.setItem(this.localDbName,JSON.stringify(this.mainDb));
+    }
+    sort(){
+        var len = arguments.length;
+        if(len == 0){
+            console.error("Arguments in the sort() method cannot be blank");
+        }
+        else if(len == 1){
+            this.sortAsc(arguments[0]);
+        }
+        else if(len==2){
+            var typ = arguments[1].toLowerCase();
+            if(typ=="asc"||typ=="ascending"){
+                this.sortAsc(arguments[0]);
+            }else if(typ=="des"||typ=="descending"){
+                this.sortDes(arguments[0]);
+            }else{
+                console.error("Pass correct argument in sort() method");
+            }
+        }
+        return this;
+    }
+    sortAsc(){
+        const len = arguments.length;
+        const dbLen = this.mainDb.length;
+        var i,j;
+        if(len==1){
+            for(i=0;i<dbLen;i++)
+                for(j=i+1;j<dbLen;j++){
+                    var c = this.mainDb[i][arguments[0]];
+                    var d = this.mainDb[j][arguments[0]];
+                    if(c>d){
+                        var tmp = this.mainDb[i];
+                        this.mainDb[i] = this.mainDb[j];
+                        this.mainDb[j] = tmp;
+                    }
+                }
+        }
+    }
+    sortDes(){
+        const len = arguments.length;
+        const dbLen = this.mainDb.length;
+        var i,j;
+        if(len==1){
+            for(i=0;i<dbLen;i++)
+                for(j=i+1;j<dbLen;j++){
+                    var c = this.mainDb[i][arguments[0]];
+                    var d = this.mainDb[j][arguments[0]];
+                    if(c<d){
+                        var tmp = this.mainDb[i];
+                        this.mainDb[i] = this.mainDb[j];
+                        this.mainDb[j] = tmp;
+                    }
+                }
+        }
     }
 }

@@ -1,6 +1,6 @@
 # **localDb.js 1.2.1**
 
-localDb.js is a simple `Javascript` `Library` with which you can perform some operations like a database do. It is not actually a database, but performs same as a database do. It stores data on browser's `localStorage`. **It gives some functionality like `UPDATE`, `DELETE`, `INSERT`, `QUERY` etc** which we used to do in `SQL` like databases.
+localDb.js is a simple `Javascript` `Library` with which you can perform some operations like a database do. It is not actually a database, but performs same as a database do. It stores data on browser's `localStorage`. **It gives some functionality like `UPDATE`, `DELETE`, `INSERT`, `SORT`, `QUERY` etc** which we used to do in `SQL` like databases.
 # By Abinash Karmakar & Dark Rose Software
 - Dark Rose Software
 - Abinash Karmakar
@@ -183,14 +183,72 @@ StdS.del(3,"name=='Abinash'","first");
 StdS.delDb(); // Deletes the database and it's all data
 ```
 > Delete functions always returns how many data are deleted
+## Sort Database | `sort()`
+> sort() returns the localDb object after sorting
+- ### Sort by a specific property
+```js
+StdS.sort("age");
+//sort() returns the localDb object after sorting
+//Sorts all data in ascending order
+```
+- ### Ascending and Descending
+```js
+StdS.sort("name");
+//    OR
+StdS.sort("name","aSC");// the second argument is case insensitive
+//    OR
+StdS.sort("name","ascending");
+// Get the same result, Sorts ascending
+
+StdS.sort("name","deS");
+StdS.sort("name","dEscenDing");
+// Sorts Descending
+```
+- ### Get the max and min property value
+```js
+var y = StdS.sort("age").get(0);
+//Get the 1st element after sorting
+//Means the element with smallest age value
+//Or this can also be done
+StdS.sort("age");
+var y = StdS.get(0);
+//Get Same Result
+
+var y = StdS.sort("age","des").get(0);
+//Get the 1st element after sorting
+//Means the element with maximum age value
+```
+- ### Save after sorting
+If you save() after sorting, the sorted Database will be saved in localStorage
+```js
+StdS.sort("name").save();
+//         OR
+StdS.sort("name");
+StdS.save(); // Save all sorted data
+```
+
+- ### Multiple Sorting
+You can "Sort after a Sorting" in a single line.
+```js
+var y = StdS.sort("age","des").sort("name","asc");
+// First sorts by age and then by name
+```
+
+
 
 # Advanced 
-- ### Get name of Database
+- ### Get name of Database | `getName()`
 ```js
 var x = StdS.getName(); // Returns the name of the database
 console.log(x);
 ```
-- ### Set Name of Database
+- ### Get the key name | `getKeyName()`
+It will return a string, all data is saved by this string(Name) in the localStorage.
+```js
+var x = StdS.getKeyName();
+console.log(x); // "lDark#4s5dStudentskey2sd55"
+```
+- ### Set Name of Database | `setName()`
 ```js
 var d = StdS.setName("D");
 // Changes the name of the database and returns the changed database
@@ -203,12 +261,12 @@ StdS.setName("D");
 var d = new localDb("D");
 console.log(d.get());
 ```
-- ### Get Number of Elements
+- ### Get Number of Elements | `length()`
 ```js
 console.log(d.length());
 // Returns the number of elements in the Database
 ```
-- ### Copy DB to Another DB
+- ### Copy DB to Another DB | `copy()`
 ```js
 var s = new localDb("myDb");
 s.copy(a);
@@ -221,10 +279,7 @@ s.copy(a,b,c); // stores data of a,b,c into s
 console.log(s.get());
 // Output will be all of the data of a, b, c
 ```
-- ## Sorting
-You have to sort manually, because sorting is not available in this version. It will be available in next versions. 
-#### Hints For Sorting
-Access `dbName.mainDb`, here all data are saved as `array` of `objects`. Sort as you want. After sorting use `dbName.save()` to save all sorting you did. It will be available soon by `sort()` method here.
+
 # ADVANTAGES
 - You can use a database in frontend too.
 - Very useful for every kind of web apps or websites like Offline WebApp, PWA(Progressive Web App) etc.
@@ -232,7 +287,7 @@ Access `dbName.mainDb`, here all data are saved as `array` of `objects`. Sort as
 - Manages data easily.
 ## LIMITATIONS : 
 - We know a normal browser gives us only 5mb storage for every site to use `localStorage`, so we can store up to **5MB** data here. Well, think, you are using this DataBase in frontend, so you will have to store one(maybe 2 or 3) user's data. To store this little amount of data, 5MB storage is enough.
-- Sorting is not available in this version, but it will be available in the next versions (>1.2.0) soon.
+
 ## WHERE TO USE :
 It may be used in all web applications like offline web applications or PWA or in a normal website.
 
