@@ -1,9 +1,9 @@
 //  localDb.js
 //  Very Easy localStorage DataBase
 //  for Frontend -- LIBRARY
-//  Version 1.2.1
+//  Version 1.3.2
 //  BY - Abinash karmakar
-//  10th july 2021
+//  15th july 2021
 
 class localDb{
     constructor(name){
