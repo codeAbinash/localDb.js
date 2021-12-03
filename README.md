@@ -297,3 +297,7 @@ For Example,
 - Sometimes you have to store many website data, for example, if dark mode is on or off or to save where you quit the browser to start again the site in same condition, etc.
 
 # Give a star😊, thank you🙃!
+
+
+
+### Next version will release on indexedDB with very large storage
