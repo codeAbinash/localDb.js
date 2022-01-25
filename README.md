@@ -296,8 +296,6 @@ For Example,
 - Imagine you are making a Notes application, so you have to store every different note permanently in `localStorage`. Here you have to use a library to store all notes data otherwise you have to write very very long code.
 - Sometimes you have to store many website data, for example, if dark mode is on or off or to save where you quit the browser to start again the site in same condition, etc.
 
-# Give a star😊, thank you🙃!
-
-
-
 ### Next version will release on indexedDB with very large storage
+
+## 
