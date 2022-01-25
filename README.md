@@ -298,4 +298,4 @@ For Example,
 
 ### Next version will release on indexedDB with very large storage
 
-## 
+## ⭐⭐⭐
