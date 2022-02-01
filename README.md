@@ -24,10 +24,10 @@ It saves everything in `JSON` format in browser's `localStorage`. You can imagin
 # How to Use 
 At first you have to add a source of localDb.js in your web page before you use any javascript code of this library.
 ```html
-<script src="https://darkroseabinash.github.io/localDb.js/localDb.min.js"></script>
+<script src="https://codeAbinash.github.io/localDb.js/localDb.min.js"></script>
 ```
 ```html
-<script src="https://darkroseabinash.github.io/localDb.js/localDb.js"></script>
+<script src="https://codeAbinash.github.io/localDb.js/localDb.js"></script>
 ```
 ## Create A Database | `localDb()`
 ```javascript
