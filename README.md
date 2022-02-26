@@ -1,5 +1,13 @@
 # **localDb.js 1.3.2**
 
+![File Size](https://img.shields.io/github/size/codeAbinash/localDb.js/localDb.min.js?)
+![Release Date](https://img.shields.io/github/release-date/codeabinash/localdb.js)
+![Languages](https://img.shields.io/github/languages/top/codeabinash/localdb.js)
+![Tag](https://img.shields.io/github/tag/codeabinash/localdb.js)
+![Downloads](https://img.shields.io/github/downloads/codeabinash/localdb.js/total?style=social)
+![Watch](https://img.shields.io/github/stars/codeabinash/localdb.js?label=Watch&style=social)
+![Stars](https://img.shields.io/github/stars/codeabinash/localdb.js?style=social)
+
 localDb.js is a simple `Javascript` `Library` with which you can perform some operations like a database do. It is not actually a database, but performs same as a database do. It stores data on browser's `localStorage`. **It gives some functionality like `UPDATE`, `DELETE`, `INSERT`, `SORT`, `QUERY` etc** which we used to do in `SQL` like databases.
 # By Abinash Karmakar & Dark Rose Software
 - Dark Rose Software
