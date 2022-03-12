@@ -412,3 +412,5 @@ class localDb{
         }
     }
 }
+
+export default localDb;

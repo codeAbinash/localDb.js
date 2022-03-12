@@ -1,4 +1,4 @@
-# **localDb.js 1.3.2**
+# **localDb.js 1.3.3**
 
 ![File Size](https://img.shields.io/github/size/codeAbinash/localDb.js/localDb.min.js?)
 ![Release Date](https://img.shields.io/github/release-date/codeabinash/localdb.js?color=limegreen)
@@ -9,18 +9,17 @@
 ![Stars](https://img.shields.io/github/stars/codeabinash/localdb.js)
 
 localDb.js is a simple `Javascript` `Library` with which you can perform some operations like a database do. It is not actually a database, but performs same as a database do. It stores data on browser's `localStorage`. **It gives some functionality like `UPDATE`, `DELETE`, `INSERT`, `SORT`, `QUERY` etc** which we used to do in `SQL` like databases.
-# By Abinash Karmakar & Dark Rose Software
-- Dark Rose Software
+# By Abinash Karmakar
 - Abinash Karmakar
 - License : MIT ( [Read License](LICENSE))
 >I made this library as easy to use as possible.
-## VERSIONS
-- v 1.3.2 15 July 2021
-- v 1.2.1 10 July 2021
-- v 1.1.0 (Never released)
-- v 1.0.0 (Never released)
 
 
+
+## npm
+```
+npm i localdb.js
+```
 
 ## HOW IT WORKS :
 >You should have a basic knowledge of `Javascript` `objects`.
@@ -32,10 +31,10 @@ It saves everything in `JSON` format in browser's `localStorage`. You can imagin
 # How to Use 
 At first you have to add a source of localDb.js in your web page before you use any javascript code of this library.
 ```html
-<script src="https://codeAbinash.github.io/localDb.js/localDb.min.js"></script>
+<script src="https://codeAbinash.github.io/localDb.js/localDb.min.js" type="module"></script>
 ```
 ```html
-<script src="https://codeAbinash.github.io/localDb.js/localDb.js"></script>
+<script src="https://codeAbinash.github.io/localDb.js/localDb.js" type="module"></script>
 ```
 ## Create A Database | `localDb()`
 ```javascript
