@@ -1,0 +1,19 @@
+{
+  "name": "localstorage-db.js",
+  "version": "1.3.3",
+  "description": "![File Size](https://img.shields.io/github/size/codeAbinash/localDb.js/localDb.min.js?)\r ![Release Date](https://img.shields.io/github/release-date/codeabinash/localdb.js?color=limegreen)\r ![Languages](https://img.shields.io/github/languages/top/codeabinash/localdb.js?color=yellow)\r ![Tag](https://img.shields.io/github/tag/codeabinash/localdb.js?color=limegreen)\r ![Downloads](https://img.shields.io/github/downloads/codeabinash/localdb.js/total?color=limegreen)\r ![Watch](https://img.shields.io/github/stars/codeabinash/localdb.js?label=Watch&color=blue)\r ![Stars](https://img.shields.io/github/stars/codeabinash/localdb.js)",
+  "main": "localDb.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarkRoseAbinash/localDb.js.git"
+  },
+  "author": "Abinash Karmakar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DarkRoseAbinash/localDb.js/issues"
+  },
+  "homepage": "https://github.com/DarkRoseAbinash/localDb.js#readme"
+}
