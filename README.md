@@ -36,6 +36,14 @@ At first you have to add a source of localDb.js in your web page before you use 
 ```html
 <script src="https://codeAbinash.github.io/localDb.js/localDb.js" type="module"></script>
 ```
+
+## OR
+```js
+import localDb from "https://codeAbinash.github.io/localDb.js/localDb.min.js"
+```
+```js
+import localDb from "https://codeAbinash.github.io/localDb.js/localDb.js"
+```
 ## Create A Database | `localDb()`
 ```javascript
 var StdS = new localDb("Students");
