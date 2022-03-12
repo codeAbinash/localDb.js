@@ -18,7 +18,7 @@ localDb.js is a simple `Javascript` `Library` with which you can perform some op
 
 ## npm
 ```
-npm i localdb.js
+npm i localstorage-db.js
 ```
 
 ## HOW IT WORKS :
