@@ -14,7 +14,7 @@ localDb.js is a simple `Javascript` `Library` with which you can perform some op
 - License : MIT ( [Read License](LICENSE))
 >I made this library as easy to use as possible.
 
-
+![Logo](./images/logo/logo.svg)
 
 ## npm
 ```
